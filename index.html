@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tide09th Official - Links (Red Dead Style)</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            /* กำหนด Courier Prime เป็นฟอนต์เริ่มต้น */
+            font-family: 'Courier Prime', monospace;
+        }
+
+        body {
+            /* เปลี่ยนสีพื้นหลังเป็นน้ำตาลสนิม */
+            background-color: #5d3a1f; 
+            background-image: radial-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 0);
+            background-size: 24px 24px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+            /* เปลี่ยนสีตัวหนังสือหลักเป็นสีทองอ่อนๆ */
+            color: #f7e7c9;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 450px;
+            text-align: center;
+            position: relative;
+        }
+
+        /* องค์ประกอบตกแต่งด้านบน */
+        .header-decor {
+            font-size: 50px;
+            color: #c9b19e; /* สีโลหะเก่าๆ */
+            margin-bottom: 20px;
+        }
+
+        .profile-section {
+            margin-bottom: 35px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .profile-img {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            /* เปลี่ยนกรอบให้ดูเหมือนทองเหลืองเก่า */
+            border: 4px solid #8c6a4a;
+            object-fit: cover;
+            /* เพิ่มเงาที่ดูหนักแน่นขึ้น */
+            box-shadow: 6px 6px 0px #1a100a;
+            margin-bottom: 15px;
+        }
+
+        .username {
+            /* ใช้ฟอนต์ Western style สำหรับชื่อผู้ใช้ */
+            font-family: 'Rye', cursive;
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            /* เพิ่มเงาสีดำหนาๆ */
+            text-shadow: 3px 3px 0px #000;
+            color: #dcb88f; /* สีทองเหลืองสว่าง */
+        }
+
+        .bio {
+            font-size: 16px;
+            line-height: 1.5;
+            padding: 0 15px;
+            /* ลดเงาตัวหนังสือลงเล็กน้อย */
+            text-shadow: 1px 1px 0px rgba(0,0,0,0.7);
+        }
+
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            padding: 10px;
+        }
+
+        .link-card {
+            /* เปลี่ยนสีพื้นหลังปุ่มเป็นทองเหลืองเข้ม */
+            background-color: #8c6a4a;
+            color: #000000;
+            text-decoration: none;
+            padding: 16px 24px;
+            border-radius: 50px;
+            /* เพิ่มกรอบให้ดูเหมือนโลหะ */
+            border: 4px solid #3d2b1c;
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+            font-weight: 700;
+            /* เพิ่มเงาที่ดูหนักและเก่าขึ้น */
+            box-shadow: 6px 6px 0px #1a100a;
+            transition: all 0.2s ease;
+            position: relative;
+        }
+
+        .link-card:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 8px 8px 0px #1a100a;
+            /* เปลี่ยนสี hover ให้นุ่มนวลขึ้น */
+            background-color: #9e7f61;
+        }
+
+        .link-card:active {
+            transform: translate(3px, 3px);
+            box-shadow: 3px 3px 0px #1a100a;
+        }
+
+        .link-card i {
+            font-size: 26px;
+            width: 35px;
+            text-align: left;
+            /* เพิ่มสไตล์เงาโลหะให้ไอคอนเล็กน้อย */
+            filter: drop-shadow(1px 1px 0px rgba(0,0,0,0.3));
+        }
+
+        .link-title {
+            flex-grow: 1;
+            text-align: center;
+            padding-right: 25px;
+        }
+
+        .more-icon {
+            position: absolute;
+            right: 24px;
+            color: #3d2b1c; /* สีน้ำตาลเข้มเหมือนตราประทับ */
+            font-size: 14px;
+        }
+
+        /* องค์ประกอบตกแต่งด้านล่าง */
+        .footer-decor {
+            font-size: 30px;
+            color: #c9b19e;
+            margin-top: 30px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header-decor"><i class="fa-solid fa-cow"></i></div>
+
+        <div class="profile-section">
+            <img class="profile-img" src="img/585330559_2348518545574423_22440811435534869_n.jpg" alt="Pie4pple Profile">
+            <h1 class="username">Tide09Th</h1>
+            <p class="bio">Hi stranger! My name is Tide.<br>Here's my social media.<br>Feel free to contact me.</p>
+        </div>
+
+        <div class="links-container">
+
+            <a href="https://ezdn.app/tidepop09" target="_blank" class="link-card">
+                <i class="fa-solid fa-wallet" style="color: #000000;"></i> <span class="link-title">Easydonate</span>
+                <span class="more-icon"><i class="fa-solid fa-ellipsis-vertical"></i></span>
+            </a>
+
+            <a href="https://www.twitch.tv/tideth09" target="_blank" class="link-card">
+                <i class="fa-brands fa-twitch" style="color: #000000;"></i> <span class="link-title">Twitch</span>
+                <span class="more-icon"><i class="fa-solid fa-ellipsis-vertical"></i></span>
+            </a>
+
+            <a href="https://www.tiktok.com/@tideth01" target="_blank" class="link-card">
+                <i class="fa-brands fa-tiktok" style="color: #000000;"></i>
+                <span class="link-title">TikTok</span>
+                <span class="more-icon"><i class="fa-solid fa-ellipsis-vertical"></i></span>
+            </a>
+
+            <a href="https://www.instagram.com/tide09th/" target="_blank" class="link-card">
+                <i class="fa-brands fa-instagram" style="color: #000000;"></i> <span class="link-title">Instagram</span>
+                <span class="more-icon"><i class="fa-solid fa-ellipsis-vertical"></i></span>
+            </a>
+
+            <a href="https://discord.gg/Qtxzty5p" target="_blank" class="link-card">
+                <i class="fa-brands fa-discord" style="color: #000000;"></i> <span class="link-title">Join my Discord Server!</span>
+                <span class="more-icon"><i class="fa-solid fa-ellipsis-vertical"></i></span>
+            </a>
+
+        </div>
+
+        <div class="footer-decor">
+            <i class="fa-solid fa-star"></i>
+            <span style="margin: 0 10px;">•</span>
+            <i class="fa-solid fa-revolver"></i><i class="fa-solid fa-revolver" style="transform: scaleX(-1);"></i>
+        </div>
+    </div>
+
+</body>
+</html>
